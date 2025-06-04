@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map Settings"
+        android:textStyle="bold"
+        android:paddingBottom="8dp" />
+
+    <RadioGroup
+        android:id="@+id/map_type_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/map_type_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal" />
+        <RadioButton
+            android:id="@+id/map_type_satellite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Satellite" />
+        <RadioButton
+            android:id="@+id/map_type_terrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terrain" />
+        <RadioButton
+            android:id="@+id/map_type_hybrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hybrid" />
+        <RadioButton
+            android:id="@+id/map_type_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
+    </RadioGroup>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Traffic" />
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/switch_3d"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3D view" />
+</LinearLayout>
