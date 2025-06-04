@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.textfield.TextInputLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_input_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    app:boxBackgroundMode="filled"
+    app:boxCornerRadiusTopStart="8dp"
+    app:boxCornerRadiusTopEnd="8dp"
+    app:boxCornerRadiusBottomStart="8dp"
+    app:boxCornerRadiusBottomEnd="8dp"
+    app:boxStrokeColor="?attr/colorPrimary"
+    app:hintEnabled="true"
+    app:hintAnimationEnabled="true"
+    app:hintTextAppearance="@style/TextAppearance.Material3.BodyMedium">
+
+    <com.google.android.material.textfield.MaterialAutoCompleteTextView
+        android:id="@+id/search_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="?attr/colorOnSurface"
+        android:textColorHint="?attr/colorOnSurfaceVariant"
+        android:hint="Tìm kiếm địa điểm"
+        android:padding="12dp" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/places_recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:maxHeight="350dp"
+    android:clipToPadding="false"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:visibility="gone"
+    android:scrollbars="vertical" />
