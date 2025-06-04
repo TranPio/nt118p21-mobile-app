@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#6200EE</color> <!-- Màu tím: màu chính của ứng dụng -->
+    <color name="secondary">#03DAC5</color> <!-- Màu xanh nước biển: màu phụ -->
+
+    <!-- Colors required for Material Theme -->
+    <color name="colorPrimary">@color/primary</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">@color/accent</color>
+
+    <!-- Màu bổ sung -->
+    <color name="accent">#FF4081</color> <!-- Màu hồng: màu nhấn -->
+    <color name="text_primary">#000000</color> <!-- Màu đen: màu chữ chính -->
+    <color name="text_secondary">#757575</color> <!-- Màu xám: màu chữ phụ -->
+    <color name="divider">#E0E0E0</color> <!-- Màu xám nhạt: màu phân cách -->    <!-- Primary colors -->
+    <color name="primary_color">#4285F4</color> <!-- Màu chính cho UI -->
+    <color name="light_blue">#74BBDA</color> <!-- Nền header và FAB -->
+    <color name="dark_blue">#4682B4</color> <!-- Màu cho thanh header khi cần đậm hơn -->
+
+    <!-- Text colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="dark_gray">#333333</color>
+    <color name="gray">#808080</color>
+    <color name="blackblue">#001645</color>
+    <!-- Chart colors -->
+    <color name="dangerous_red">#FF4500</color> <!-- Màu cho loại pothole "D" -->
+    <color name="warning_orange">#FFA500</color> <!-- Màu cho loại pothole "W" -->
+    <color name="caution_yellow">#FFFF00</color> <!-- Màu cho loại pothole "C" -->
+    <color name="safe_green">#32CD32</color> <!-- Màu cho tình trạng pothole đã sửa -->
+
+    <!-- Navigation bar colors -->
+    <color name="nav_background">#FFFFFF</color>
+    <color name="selected_icon">#4682B4</color>
+    <color name="unselected_icon">#A9A9A9</color>
+
+    <!-- Background colors for rounded cards -->
+    <color name="card_background">#FFFFFF</color>    <!-- Gradient colors for bar chart -->
+    <color name="bar_start_color">#FF4500</color> <!-- Màu bắt đầu cho cột biểu đồ -->
+    <color name="bar_end_color">#FFD700</color> <!-- Màu kết thúc cho cột biểu đồ -->    <!-- Material Design colors for CompactRoutePanel -->
+    <color name="blue_500">#2196F3</color> <!-- Màu xanh dương Material Design -->
+    <color name="gray_600">#757575</color> <!-- Màu xám Material Design -->
+    
+    <!-- Additional Material Design colors for item_route_option -->
+    <color name="black">#000000</color> <!-- Màu đen chuẩn -->
+    <color name="gray_300">#E0E0E0</color> <!-- Màu xám nhạt -->
+    <color name="gray_400">#BDBDBD</color> <!-- Màu xám trung bình -->
+    <color name="gray_500">#9E9E9E</color> <!-- Màu xám đậm -->
+
+</resources>
+
