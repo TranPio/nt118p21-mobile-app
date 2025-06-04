@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Ô tìm kiếm - Google Maps style -->
+    <LinearLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_box_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:elevation="4dp">
+
+        <!-- Back button or menu -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Back"
+            android:padding="2dp"
+            android:src="@drawable/ic_arrow_back" 
+            android:background="?attr/selectableItemBackgroundBorderless" />
+
+        <EditText
+            android:id="@+id/search_input"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="Học Công Nghệ Thông Tin"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="6dp"
+            android:textColor="#212121"
+            android:textColorHint="#757575"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/clear_search"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Clear Search"
+            android:padding="2dp"
+            android:src="@drawable/baseline_close_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:visibility="gone" />
+    </LinearLayout>    <!-- Danh sách kết quả tìm kiếm -->
+    <ListView
+        android:id="@+id/places_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:maxHeight="350dp"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:scrollingCache="true"
+        android:smoothScrollbar="true"
+        android:nestedScrollingEnabled="true"
+        android:background="@android:color/white"
+        android:divider="#E0E0E0"
+        android:dividerHeight="1dp"
+        android:fastScrollEnabled="true"
+        android:clipToPadding="false"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:visibility="gone" />
+
+</LinearLayout>
