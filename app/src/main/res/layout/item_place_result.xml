@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!-- Icon vị trí -->
+    <ImageView
+        android:id="@+id/place_icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/icon_place"
+        android:contentDescription="Place Icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/place_address" />
+
+    <!-- Tên địa điểm -->
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="Trường Đại học Công nghệ Thông tin"
+        app:layout_constraintStart_toEndOf="@id/place_icon"
+        app:layout_constraintEnd_toStartOf="@id/place_distance"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Địa chỉ -->
+    <TextView
+        android:id="@+id/place_address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="4dp"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="Khu phố 6, P.Linh Trung, Tp.Thủ Đức, Tp.Hồ Chí Minh"
+        app:layout_constraintStart_toEndOf="@id/place_icon"
+        app:layout_constraintEnd_toStartOf="@id/place_directions"
+        app:layout_constraintTop_toBottomOf="@id/place_name" />
+
+    <!-- Khoảng cách -->
+    <TextView
+        android:id="@+id/place_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#4CAF50"
+        tools:text="4,8 km"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/place_name"
+        app:layout_constraintBottom_toBottomOf="@id/place_name" />
+
+    <!-- Biểu tượng chỉ đường -->
+    <ImageView
+        android:id="@+id/place_directions"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/icon_place_directions"
+        android:contentDescription="Get Directions"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/place_address"
+        app:layout_constraintBottom_toBottomOf="@id/place_address" />
+
+    <!-- Đường ngăn cách (divider) -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/place_address"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="1dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
